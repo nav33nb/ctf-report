@@ -1,6 +1,4 @@
----
-#This is report Metasata, essentially arguments passed on to pandoc
-#during report generation used by latex template
+<!-- ---
 title: "CTF Report Structure"
 subtitle: "A Comprehensive Guide to Writing CTF Reports"
 author: Naveen Bassi
@@ -15,9 +13,12 @@ toc-own-page: "true"
 footer-left: "Naveen Bassi"
 colorlinks: true
 linkcolor: blue
-# highlight-style: haddock
 listings: true
-...
+... -->
+
+<!-- UNCOMMENT ABOVE BEFORE REPORT GENERATION-->
+<!-- Above is report Metadata, essentially the arguments that passed on to pandoc during report generation to configure the latex template -->
+
 
 # Preamble
 This is a blueprint I followed for the CTF-style lab work we had at MITT during my time as a Network Security student at PACE UoW. This guide is organized into several sections, which serve as guidance on how and where to store certain data and to assist in managing time, as well as being efficient and organized during actual engagements. This document provides a procedure to follow as well as a skeleton folder structure to aid your work.
@@ -74,6 +75,7 @@ sudo apt-get install \
     texlive-latex-extra
 
 # Step 4: Run Pandoc to convert Markdown to PDF (or other formats)
+# !!! MAKE SURE TO UNCOMMENT METADATA AT THE TOP OF THIS DOCUMENT !!!
 pandoc \
     --from markdown ReadMe.md \
     -o ReadMe_default.pdf
@@ -82,6 +84,7 @@ pandoc \
 # See: https://github.com/Wandmalfarbe/pandoc-latex-template
 # To use the custom template, run the command like this:
 # Note that custom templates come with their own dependencies
+# !!! MAKE SURE TO UNCOMMENT METADATA AT THE TOP OF THIS DOCUMENT !!!
 pandoc \
     --from markdown ReadMe.md \
     -o ReadMe_eisvogel.pdf \
