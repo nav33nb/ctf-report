@@ -27,6 +27,8 @@ You are free to follow the headers as is. Their descriptions should provide expl
 
 > **Please add a star on [GitHub/nav33nb/ctf-report](https://github.com/nav33nb/ctf-report) if you find this helpful.**
 
+## See Report samples under `pdf/`
+
 ![Eisvogel pdf report preview](img/eisvogel.png)
 
 ![Pandoc default pdf report preview](img/pandoc.png)
@@ -57,7 +59,9 @@ img/            # Holds screenshots and imgs
 ```
 
 ## Usage & Report Generation
-Report can be generated to a PDF via Pandoc. See [Pandoc - https://pandoc.org/](https://pandoc.org/). Pandoc uses LaTeX templates to convert Markdown to PDF. Markdown provides the content and its structure, while LaTeX provides the style. As long as you have a template, the same Markdown source can be formatted in multiple ways. See some examples under `pdf/`.
+Report can be generated to a PDF via Pandoc. See [Pandoc - https://pandoc.org/](https://pandoc.org/). 
+
+Pandoc uses LaTeX templates to convert Markdown to PDF. Markdown provides the content and its structure, while LaTeX provides the style. As long as you have a template, the same Markdown source can be formatted in multiple ways. See some examples under `pdf/`.
 
 ```sh
 # Step 1: Clone the repository
@@ -100,8 +104,9 @@ Introduce yourself, your team, the context, and the setting of the engagement. D
 - Explain the target scope, their network, and known information (if any).
 - Explain your choice of VM, tools, and any other decisions made before engaging.
 - Code Blocks are an effective way to establish facts, show results and present exact information
+- Add images, specifically screenshots to show your work as shown below with an example
 
-![Add figures and their description like this, pandoc will auto assign a number. Place screenshots under `img/`](img/kali.png){width=300px height=300px}
+![Add figures and their description like this, pandoc will auto assign a number. Place screenshots under `img/`](img/kali.png)
 
 
 ```go
